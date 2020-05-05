@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat application</title>
+    <link rel="icon" href=img/favicon.png" type="img">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <h1>Join Chat</h1>
+            <form action="/chat.html">
+                <label>Chat Username</label>
+                <input type="text" name="username" placeholder="name" required>
+                <label>Room Name</label>
+                <input type="text" name="room" placeholder="room">
+                <label for="active-rooms">Or Choose an Active Room</label>
+                <select id="active-rooms" name="activeroom">
+                    <option value="" selected disabled hidden>choose an option</option>
+                    <%ob.arr.forEach((ele)=>{%>
+                    <option value="<%=ele%>"><%=ele%></option>
+                    <%})%>
+                </select>
+                <br>
+                <br>
+                <button>Join</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
