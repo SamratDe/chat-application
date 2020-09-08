@@ -1,7 +1,8 @@
 # chat-application
-Multi-client chat application using socket.io and nodejs.
-Features like multi-room and active rooms are there.
+Real Time Chat application using Socket.io and Node.
 
-### Link
-Access the application on : [link](https://samrat-chat-app-v1.herokuapp.com/)
 
+### Features
+- Multi-Client
+- Multi-Room
+- Active Rooms
